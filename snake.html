@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <canvas id="gc" width="400" height="400"></canvas> -->
+    <canvas id="gameCanv" width="400" height="400"></canvas>
+
+    <script>
+        cnv = document.getElementById("gameCanv");
+        cntx = cnv.getContext("2d");
+        // step count
+        const STEP = 20;
+        var xStep = 20, yStep = 20;
+        var snakeBody = [];
+        // snake body box size.
+        var snakeBox = 18;
+        // initial position of snake 
+        var lastX = 200;
+        var lastY = 200;
+        // add arrow key event
+        document.addEventListener("keydown", keyDown);
+        function keyDown(e) {
+            switch (e.keyCode) {
+                //left
+                case 37: yStep = STEP * 0; xStep = STEP * -1;
+                    break;
+                //up
+                case 38: yStep = STEP * -1; xStep = STEP * 0;
+                    break;
+                //right
+                case 39: yStep = STEP * 0; xStep = STEP * 1;
+                    break;
+                //down
+                case 40: yStep = STEP * 1; xStep = STEP * 0;
+                    break;
+            }
+        }
+        // run game.
+        setInterval(runSnake, 1000 / 5);
+        var foodX = Math.floor(Math.random() * 20);
+        var foodY = Math.floor(Math.random() * 20);
+        function makeFood() {
+            // snake food.
+            cntx.fillStyle = "yellow";
+            cntx.fillRect(foodX * 20, foodY * 20, 18, 18); // left top width height.
+        }
+        function runSnake() {
+            // canvas background color.
+            cntx.fillStyle = "black";
+            cntx.fillRect(0, 0, cnv.width, cnv.height);
+            // creare snake food
+            makeFood();
+            // remove head/top from snake body inorder to show like its moving
+            if (snakeBody.length > 1) {
+                snakeBody.shift();
+            }
+            // calculate new position of X and Y.
+            if (xStep == 20 && yStep == 20) {
+                // initially set snake head and tail in center.
+                lastX = 200;
+                lastY = 200;
+            } else {
+                // get head/top position current snake body :  x
+                lastX = snakeBody[snakeBody.length - 1].x;
+                // get head/top position current snake body :  y
+                lastY = snakeBody[snakeBody.length - 1].y;
+                // add or sutract value from lastX and lastY
+                // either one should be 0 always
+                lastX = lastX + xStep;
+                lastY = lastY + yStep;
+                // if lastY is at end of canvas set lastY value appropriately.
+                lastY = lastY >= 400 ? 0 : lastY;
+                lastY = lastY == -20 ? 380 : lastY;
+                // if lastX is at end of canvas set lastX value appropriately.
+                lastX = lastX >= 400 ? 0 : lastX;
+                lastX = lastX == -20 ? 380 : lastX;
+            }
+            // add new block at last position of snake body.
+            snakeBody.push({ x: lastX, y: lastY });
+            // Eat food
+            if ((foodX * STEP) == snakeBody[snakeBody.length - 1].x && (foodY * STEP) == snakeBody[snakeBody.length - 1].y) {
+                snakeBody.push({ x: (foodX * STEP), y: (foodY * STEP) });
+                // create new food positions
+                foodX = Math.floor(Math.random() * 20);
+                foodY = Math.floor(Math.random() * 20);
+            }
+            // create full snake body using the array.
+            cntx.fillStyle = "red";
+            for (var k = 0; k < snakeBody.length; k++) {
+                cntx.fillRect(snakeBody[k].x, snakeBody[k].y, snakeBox, snakeBox);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -2,223 +2,579 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Arun CM - Senior Software Engineer</title>
-  <link rel="stylesheet" href="home.css">
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Arun CM - Software Developer">
+	<meta name="keywords" content="cv, resume, portfolio, creative, modern">
+	<meta name="author" content="Hamza Gourram">
+	<!-- Page Title -->
+	<title>Arun CM - Software Developer</title>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/tootik.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Light & Dark Color -->
+	<link rel="stylesheet" id="light-dark" href="css/colors/light.css">
+	<!-- Theme Color -->
+	<link rel="stylesheet" id="colors" href="css/colors/color1-0487cc.css">
+	<!-- Responsive style -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|PT+Sans+Narrow:400,700">
 </head>
 
 <body>
 
-  <div class="resume-wrapper">
-    <section class="profile section-padding">
-      <div class="container">
-        <div class="picture-resume-wrapper">
-          <div class="picture-resume">
-            <span><img
-                src="https://media.licdn.com/dms/image/C5103AQHJvO0x6GBc6w/profile-displayphoto-shrink_200_200/0?e=1557360000&v=beta&t=e_0XtLbR0zg_Ynhnk3iDNh1XLpxRyS85BMkSu4NaHSk"
-                alt="" /></span>
-            <svg version="1.1" viewBox="0 0 350 350">
+	<div class="content">
+		<!-- #LOADER# -->
+		<!-- other loader : http://tobiasahlin.com/spinkit/ -->
+		<div class="loading-overlay">
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
 
-              <defs>
-                <filter id="goo">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
-                    result="cm" />
-                </filter>
-              </defs>
+		<!-- #MENU# -->
+		<div class="menu" style="display:none">
+			<h2 class="logo">Arun CM</h2>
+			<div class="menu-content">
+				<ul>
+					<li><a class="active" href="#" data-value="about">ABOUT</a></li>
+					<li><a href="#" data-value="skills">SKILLS</a></li>
+					<li><a href="#" data-value="education">EDUCATION</a></li>
+					<li><a href="#" data-value="experience">EXPERIENCE</a></li>
+					<li><a href="#" data-value="testimonials">TESTIMONIALS</a></li>
+				</ul>
+			</div>
+			<div class="open-menu">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+		<!-- #THEME-OPTION# -->
+		<!-- other colors : http://colorhunt.co/ -->
+		<!-- <div class="theme-option">
+			<div class="change-theme">
+				<div class="light-dark-theme">
+					<ul>
+						<li class="light">
+							<h4>Light</h4>
+							<span data-value="css/colors/light.css"><i class="fa fa-check"></i></span>
+						</li>
+						<li class="dark">
+							<h4>Dark</h4>
+							<span data-value="css/colors/dark.css"><i class="fa fa-check"></i></span>
+						</li>
+					</ul>
+				</div>
+				<div class="colors-theme">
+					<h4>12 awesome colors</h4>
+					<ul>
+						<li class="color1"><span data-value="css/colors/color1-0487cc.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color2"><span data-value="css/colors/color2-f23a3a.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color3"><span data-value="css/colors/color3-2eac6d.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color4"><span data-value="css/colors/color4-f35b25.css"><i
+									class="fa fa-check"></i></span></li>
+					</ul>
+					<ul>
+						<li class="color5"><span data-value="css/colors/color5-f6416c.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color6"><span data-value="css/colors/color6-ff9999.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color7"><span data-value="css/colors/color7-00adb5.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color8"><span data-value="css/colors/color8-00cf95c.css"><i
+									class="fa fa-check"></i></span></li>
+					</ul>
+					<ul>
+						<li class="color9"><span data-value="css/colors/color9-827055.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color10"><span data-value="css/colors/color10-8200ff.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color11"><span data-value="css/colors/color11-e4c144.css"><i
+									class="fa fa-check"></i></span></li>
+						<li class="color12"><span data-value="css/colors/color12-5457a6.css"><i
+									class="fa fa-check"></i></span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="open-theme">
+				<i class="fa fa-cogs"></i>
+			</div>
+		</div> -->
+		<!-- #SCROLL-TOP# -->
+		<div class="scroll-top" data-tootik="TOP" data-tootik-conf="invert no-arrow no-fading">
+			<i class="fa fa-arrow-up"></i>
+		</div>
+		<!-- #CONTAINER# -->
+		<div class="container">
+			<!-- #ABOUT# -->
+			<section id="about" class="section section-about wow fadeInUp">
+				<div class="profile">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="photo-profile">
+								<img src="images/profile.png" alt="Arun CM">
+							</div>
+							<a href="downloads/Arun CM - Sr Software Developer ( 5+ Years ) 2018.pdf" target="cv">
+								<div class="download-resume">
+									<i class="fa fa-cloud-download" aria-hidden="true"></i>
+									<span class="text-download">DOWNLOAD RESUME</span>
+								</div>
+							</a>
+							<div class="available">
+								<i class="fa fa-check" aria-hidden="true"></i>
+								<span class="text-available">willing to relocate</span>
+								&nbsp;
+								<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+								<span class="text-available">quick learner</span>
+							</div>
 
+						</div>
+						<div class="col-sm-8">
+							<div class="info-profile">
+								<h2><span>HI I'M</span> Arun CM</h2>
+								<h3>Software Developer</h3>
+								<p>Hello! I’m Arun CM. Senior Software Developer with over 6 years of experience.
+									Experienced with all stages of the development cycle for web projects.
+									Having an in-depth knowledge including advanced <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>jQuery</b>, <b>C#</b>, <b>.NET Framework</b>, <b>ASP.NET MVC</b>.</p>
+								<div class="row">
+									<div class="col-sm-6">
+										<ul class="ul-info">
+											<li class="li-info">
+												<span class="title-info">Home</span>
+												<span class="info">Kearala, India</span>
+											</li>
+											<li class="li-info">
+												<span class="title-info">Email</span>
+												<span class="info">aruncm@outlook.in</span>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-6">
+										<ul class="ul-info">
+											<li class="li-info">
+												<span class="title-info">Phone</span>
+												<span class="info">+91 9746 69 60 30</span>
+											</li>
+											<li class="li-info">
+												<span class="title-info">Website</span>
+												<span class="info">arun-cm.github.io</span>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-12">
+										<span class="title-links">Social Links</span>
+										<ul class="ul-social-links">
+										
+											<li class="li-social-links">
+												<a href="https://twitter.com/_Arun_CM" data-tootik="Twitter"
+													data-tootik-conf="square"><i class="fa fa-twitter"
+														aria-hidden="true"></i></a>
+											</li>
+											<li class="li-social-links">
+												<a href="https://stackoverflow.com/users/2309641/arun-cm"
+													data-tootik="Stackoverflow" data-tootik-conf="square"><i
+														class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+											</li>
+											<li class="li-social-links">
+												<a href="https://www.linkedin.com/in/arun-cm/" data-tootik="Linkedin"
+													data-tootik-conf="square"><i class="fa fa-linkedin"
+														aria-hidden="true"></i></a>
+											</li>
+											<li class="li-social-links">
+												<a href="https://github.com/arun-cm" data-tootik="Github"
+													data-tootik-conf="square"><i class="fa fa-github"
+														aria-hidden="true"></i></a>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #SKILLS# -->
+			<section id="skills" class="section section-skills wow fadeInUp" data-wow-offset="40">
+				<div class="header-section">
+					<h2 class="h2-section">SKILLS</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="professional-skills">
+							<div class="title-skills">
+								<h3>PROFESSIONAL SKILLS</h3>
+							</div>
+							<!-- single skill -->
+							<div class="skill">
+								<div class="title-progress">
+									<span class="skill-name">HTML & CSS</span>
+									<span class="skill-value">90%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress1" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+									</div>
+								</div>
+							</div>
+							<!-- / single skill -->
+							<!-- single skill -->
+							<div class="skill">
+								<div class="title-progress">
+									<span class="skill-name">C#</span>
+									<span class="skill-value">75%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress2" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+									</div>
+								</div>
+							</div>
+							<!-- / single skill -->
+							<!-- single skill -->
+							<div class="skill">
+								<div class="title-progress">
+									<span class="skill-name">JavaScript</span>
+									<span class="skill-value">85%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress3" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+									</div>
+								</div>
+							</div>
+							<!-- / single skill -->
+							<!-- single skill -->
+							<div class="skill">
+								<div class="title-progress">
+									<span class="skill-name">jQuery</span>
+									<span class="skill-value">70%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress4" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+									</div>
+								</div>
+							</div>
+							<!-- / single skill -->
+							<!-- single skill -->
+							<div class="skill">
+								<div class="title-progress">
+									<span class="skill-name">React JS</span>
+									<span class="skill-value">50%</span>
+								</div>
+								<div class="progress">
+									<div class="progress-bar progress5" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+									</div>
+								</div>
+							</div>
+							<!-- / single skill -->
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="additional-skills">
+							<div class="title-skills">
+								<h3>ADDITIONAL SKILLS</h3>
+							</div>
+							<div class="circle-progress">
+								<div class="row">
+									<!-- single circle skill -->
+									<div class="col-sm-4">
+										<div class="circle">
+											<div class="chart-percentage">
+												<span>90%</span>
+											</div>
+											<div class="chart" data-percent="90">
+												<!-- canvas -->
+											</div>
+											<div class="name-circle">
+												<span>Creativity</span>
+											</div>
+										</div>
+									</div>
+									<!-- / single circle skill -->
+									<!-- single circle skill -->
+									<div class="col-sm-4">
+										<div class="circle">
+											<div class="chart-percentage">
+												<span>80%</span>
+											</div>
+											<div class="chart" data-percent="80">
+												<!-- canvas -->
+											</div>
+											<div class="name-circle">
+												<span> Teamwork</span>
+											</div>
+										</div>
+									</div>
+									<!-- / single circle skill -->
+									<!-- single circle skill -->
+									<div class="col-sm-4">
+										<div class="circle">
+											<div class="chart-percentage">
+												<span>65%</span>
+											</div>
+											<div class="chart" data-percent="65">
+												<!-- canvas -->
+											</div>
+											<div class="name-circle">
+												<span>English</span>
+											</div>
+										</div>
+									</div>
+									<!-- / single circle skill -->
+								</div>
+							</div>
+							<div class="other-skills">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="other">
+											<!-- single other skill -->
+											<div class="skill">
+												<i class="fa fa-check-square-o" aria-hidden="true"></i>
+												<span>ASP.NET MVC</span>
+											</div>
+											<!-- / single other skill -->
+											<!-- single other skill -->
+											<div class="skill">
+												<i class="fa fa-check-square-o" aria-hidden="true"></i>
+												<span>PWA</span>
+											</div>
+											<!-- / single other skill -->
+											<!-- single other skill -->
+											<div class="skill">
+												<i class="fa fa-check-square-o" aria-hidden="true"></i>
+												<span>Node JS</span>
+											</div>
+											<!-- / single other skill -->
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="other">
+											<!-- single other skill -->
+											<div class="skill">
+												<i class="fa fa-check-square-o" aria-hidden="true"></i>
+												<span>MS SQL SERVER</span>
+											</div>
+											<!-- / single other skill -->
+											<!-- single other skill -->
+											<div class="skill">
+												<i class="fa fa-check-square-o" aria-hidden="true"></i>
+												<span>Powershell</span>
+											</div>
+											<!-- / single other skill -->
+											<!-- single other skill -->
+											<div class="skill">
+												<i class="fa fa-check-square-o" aria-hidden="true"></i>
+												<span>Git / TFS / TFVC</span>
+											</div>
+											<!-- / single other skill -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- #EDUCATION# -->
+			<section id="education" class="section section-education wow fadeInUp" data-wow-offset="40">
+				<div class="header-section">
+					<h2 class="h2-section">EDUCATION</h2>
+				</div>
+				<div class="row">
+					<!-- single education -->
+					<div class="col-sm-4">
+						<div class="education-content">
+							<div class="period">
+								<h3>2007 - 2011</h3>
+							</div>
+							<ul class="ul-education">
+								<li class="li-specialty">
+									<div class="specialty">
+										<span class="education-icon"><i class="fa fa-file-text"></i></span>
+										<span class="specialty-name">BACHELOR OF ENGINEERING</span>
+									</div>
+								</li>
+								<li class="li-university">
+									<div class="university">
+										<span class="education-icon"><i class="fa fa-university"></i></span>
+										<span class="university-name">VTU</span>
+									</div>
+								</li>
+							</ul>
+							<p class="prg-education">I completed Bachelor of Engineering in Information Science from
+								Shree Devi Institute of Technology, Mangalore.</p>
+						</div>
+					</div>
+					<!-- / single education -->
 
-              <g filter="url(#goo)">
+					<div class="clearfix"></div>
+				</div>
+			</section>
+			<!-- #EXPERIENCE# -->
+			<section id="experience" class="section section-experience wow fadeInUp" data-wow-offset="40">
+				<div class="header-section">
+					<h2 class="h2-section">EXPERIENCE</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<span class="icon-experience">
+							<i class="fa fa-briefcase"></i>
+						</span>
+						<div class="all-experience">
+							<!-- single experience -->
+							<div class="experience-content">
+								<span class="period-experience">March 2015 - Present</span>
+								<h3 class="specialty-name">Senior Software Engineer</h3>
+								<h3 class="company-name">Suyati Technologies</h3>
+								<p class="prg-experience">Software engineer in Microsoft technologies.</p>
+							</div>
+							<!-- / single experience -->
+							<!-- single experience -->
+							<div class="experience-content">
+								<span class="period-experience">Sept. 2013 - Jan. 2015</span>
+								<h3 class="specialty-name">Software Engineer</h3>
+								<h3 class="company-name">Illustris Software Solutions</h3>
+								<p class="prg-experience">Software engineer in Microsoft technologies.</p>
+							</div>
+							<!-- / single experience -->
+							<!-- single experience -->
+							<div class="experience-content">
+								<span class="period-experience">October 2012 - May 2013</span>
+								<h3 class="specialty-name">Software Engineer</h3>
+								<h3 class="company-name">Cybrosys Technologies</h3>
+								<p class="prg-experience">Software engineer in Microsoft technologies.</p>
+							</div>
+							<!-- / single experience -->
+						</div>
+					</div>
+				</div>
+			</section>
 
-                <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130" />
+			<!-- #TESTIMONIALS# -->
+			<section id="testimonials" class="section section-testimonials wow fadeInUp" data-wow-offset="40">
+				<div class="header-section">
+					<h2 class="h2-section">Linkedin Recommendations</h2>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- single testimonial -->
+						<div class="swiper-slide">
+							<div class="personal-info">
+								<img src="https://media.licdn.com/dms/image/C4E03AQHbcAJZnkg7Lw/profile-displayphoto-shrink_100_100/0?e=1557964800&v=beta&t=H-E3kCZE1-1so8N29NLk1yUYVELMJq6WLJIpLc-P6no" alt="">
+								<h3>Neeraj Mohan</h3>
+								<span>Business Analyst</span>
+							</div>
+							<div class="personal-text">
+								<p><i class="fa fa-quote-left"></i>I had worked with Arun over a year and I can seamlessly say that following are the strengths of Arun which makes him a key asset of the team. 1) A facile learner who is always eager in learning new technologies. 2) Constantly updating skills to the highest standards possible. 3) Flexibility, dedication & commitment.<i class="fa fa-quote-right"></i></p>
+							</div>
+						</div>
+						<!-- / single testimonial -->
+						<!-- single testimonial -->
+						<div class="swiper-slide">
+							<div class="personal-info">
+								<img src="https://media.licdn.com/dms/image/C5103AQFynWjOLCb-Fw/profile-displayphoto-shrink_100_100/0?e=1557964800&v=beta&t=bu4qH1LWH9CgDv75k9ttgcst-S564mbGVXNU1d5g1ks" alt="">
+								<h3>Antony Kallanchira</h3>
+								<span>Project Manager</span>
+							</div>
+							<div class="personal-text">
+								<p><i class="fa fa-quote-left"></i>
+									I have worked with Arun for a couple of years and one thing that really impressed me is his thirst for knowledge and how he keeps himself updated with latest technology. I have seen him architect complex projects and come up with ergonomic features with ease and can confidently say that he is capable of being a good asset to any team. 
 
-                <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7" />
-                <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7" />
+Another reason why he is a good asset is that his presence in team forces other members to be on their foot all the time and keep up with his pace. All this while having a lot of fun!!!.<i class="fa fa-quote-right"></i></p>
+							</div>
+						</div>
+						<!-- / single testimonial -->
+						<!-- single testimonial -->
+						<div class="swiper-slide">
+							<div class="personal-info">
+								<img src="https://media.licdn.com/dms/image/C4D03AQEoADVCxselpQ/profile-displayphoto-shrink_100_100/0?e=1557964800&v=beta&t=wLfKXw796GQaLzkSS1rz-21ZeKkuCoy2RgWjWb6fB9Y" alt="">
+								<h3>Sandeep T</h3>
+								<span>Sr. Database Developer</span>
+							</div>
+							<div class="personal-text">
+								<p><i class="fa fa-quote-left"></i>Arun!!!! He is technically sound, proactive and responsible professional. Its a joy to work with him as he is very energetic and an amazing team player. His critical thinking and visualizing ability helps him to articulate and solve problems. Its a pleasure for me to recommend and endorse him.<i class="fa fa-quote-right"></i></p>
+							</div>
+						</div>
+						<!-- / single testimonial -->
+						<!-- single testimonial -->
+						<div class="swiper-slide">
+							<div class="personal-info">
+								<img src="https://media.licdn.com/dms/image/C5603AQF2_P_tp_WS1A/profile-displayphoto-shrink_100_100/0?e=1557964800&v=beta&t=IDPhTRf5nAZ5S8fTXxeoePJO90f57NdaQQz_o_cqL9Y" alt="">
+								<h3>Bincy George</h3>
+								<span>SQL Server</span>
+							</div>
+							<div class="personal-text">
+								<p><i class="fa fa-quote-left"></i>Outstanding Calibre and Stimulating Temperament – that’s how I would refer Arun to anyone!
 
-              </g>
-            </svg>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <div class="name-wrapper">
-          <h1>Arun CM<br /></h1><!-- YOUR NAME AND LAST NAME  -->
-        </div>
-        <div class="clearfix"></div>
-        <div class="contact-info clearfix">
-          <ul class="list-titles">
-            <li>Call</li>
-            <li>Mail</li>
-            <li>Web</li>
-            <li>Home</li>
-          </ul>
-          <ul class="list-content ">
-            <li>+91 9746 69 60 30</li> <!-- YOUR PHONE NUMBER  -->
-            <li>aruncm@outlook.in</li> <!-- YOUR EMAIL -->
-            <li><a href="https://arun-cm.github.io/">arun-cm.github.io</a></li> <!-- YOUR WEBSITE  -->
-            <li>Kerala, India</li> <!-- YOUR STATE AND COUNTRY  -->
-          </ul>
-        </div>
-        <div class="contact-presentation">
-          <!-- YOUR PRESENTATION RESUME  -->
-          <p><span class="bold">BACHELOR OF ENGINEERING</span> <i>in</i> INFORMATION SCIENCE AND ENGINEERING </p>
-        </div>
-        <div class="contact-social clearfix">
-          <ul class="list-titles">
-            <li>Twitter</li>
-            <li>LinkedIn</li>
-          </ul>
-          <ul class="list-content">
-            <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
-            <li><a href="https://twitter.com/_Arun_CM">@_Arun_CM</a></li> <!-- YOUR TWITTER USER  -->
-            <li><a href="https://www.linkedin.com/in/arun-cm/">arun-cm</a></li> <!-- YOUR BEHANCE USER  -->
-          </ul>
-        </div>
-      </div>
-    </section>
+									We worked together in Suyati Technologies for a complex migration project called MCRS. I was really amazed to see his skills in .Net MVC - he was the one who netted the entire MCRS framework. You will always find him as a tech-geek with an extra ordinary dedication to make things happen without losing the fun aspects of a team membership. Make sure to keep your benchmarks high in case you check his skills – coz the vital keys Arun is driven by are pure passion and right attitude. All the best to a great comrade and passionate technology aspirant!<i class="fa fa-quote-right"></i></p>
+							</div>
+						</div>
+						<!-- / single testimonial -->
+						<!-- single testimonial -->
+						<div class="swiper-slide">
+							<div class="personal-info">
+								<img src="https://media.licdn.com/dms/image/C5603AQEunyg4cmPibw/profile-displayphoto-shrink_100_100/0?e=1557964800&v=beta&t=RMHY62EjJFYguNjyfPHHok5CT6aU5GOZ5oHeStS2I_k" alt="">
+								<h3>Victoria Robinson</h3>
+								<span>QC Manager</span>
+							</div>
+							<div class="personal-text">
+								<p><i class="fa fa-quote-left"></i>I worked with Arun on a new web platform our company was developing, and he was a great asset to our team. Arun was always timely with his responses, and did an excellent job troubleshooting problems and interpreting our requests for upgrades. Would love to work with him again on another project!.<i class="fa fa-quote-right"></i></p>
+							</div>
+						</div>
+						<!-- / single testimonial -->
+						
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination">
+						<!-- span -->
+					</div>
+				</div>
+			</section>
+			
+		</div>
+	</div>
 
-    <section class="experience section-padding">
-      <div class="container">
-        <h3 class="experience-title">Experience</h3>
-
-        <div class="company-wrapper clearfix">
-          <div class="experience-title">Suyati Technologies</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Mar. 2015 - Present </div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-        </div>
-
-        <div class="job-wrapper clearfix">
-          <div class="experience-title">Senior Software Developer</div> <!-- JOB TITLE  -->
-          <div class="company-description">
-            <p>Software developer in Microsoft technologies.</p> <!-- JOB DESCRIPTION  -->
-          </div>
-        </div>
-
-        <div class="company-wrapper clearfix">
-          <div class="experience-title">Illustris Software Solutions</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Sept. 2013 - Jan. 2015</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-        </div>
-
-        <div class="job-wrapper clearfix">
-          <div class="experience-title">Software Developer</div> <!-- JOB TITLE  -->
-          <div class="company-description">
-            <p>Software developer in Microsoft technologies.</p> <!-- JOB DESCRIPTION  -->
-          </div>
-        </div>
-
-        <div class="experience-wrapper">
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Cybrosys Technologies</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Oct. 2012 - May 2013</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Software Developer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Software developer in Microsoft technologies.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
-        </div>
-        <!--Skill experience-->
-
-        <div class="section-wrapper clearfix">
-          <h3 class="section-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
-          <ul>
-            <li class="skill-percentage">HTML / HTML5</li>
-            <li class="skill-percentage">CSS / CSS3 </li>
-            <li class="skill-percentage">Bootstrap</li>
-            <li class="skill-percentage">JavaScript</li>
-            <li class="skill-percentage">Ajax</li>
-            <li class="skill-percentage">jQuery</li>
-            <li class="skill-percentage">Knockout JS</li>
-            <li class="skill-percentage">React JS</li>
-            <li class="skill-percentage">JSON</li>
-            <li class="skill-percentage">C#</li>
-            <li class="skill-percentage">C</li>
-            <li class="skill-percentage">C++</li>
-            <li class="skill-percentage">ASP.NET Web form</li>
-            <li class="skill-percentage">ASP.NET MVC</li>
-            <li class="skill-percentage">Node JS</li>
-          </ul>
-        </div>
-        <div class="section-wrapper clearfix">
-          <h3 class="section-title">&nbsp;</h3> <!-- YOUR SET OF SKILLS  -->
-          <ul>
-            
-            <li class="skill-percentage">MS SQL Server</li>
-            <li class="skill-percentage">Entity Framework</li>
-            <li class="skill-percentage">ADO.NET</li>
-            <li class="skill-percentage">Castle Windsor</li>
-            <li class="skill-percentage">Just Mock</li>
-            <li class="skill-percentage">PowerShell</li>
-            <li class="skill-percentage">IIS </li>
-            <li class="skill-percentage">iMacro Tool </li>
-            <li class="skill-percentage">Telerik Rad Control </li>
-            <li class="skill-percentage">Crystal Report </li>
-            <li class="skill-percentage">Visual Studio </li>
-            <li class="skill-percentage"> Visual Studio Code </li>
-            <li class="skill-percentage">TFS </li>
-            <li class="skill-percentage">Git </li>
-          </ul>
-        </div>
-
-        <!-- <div class="section-wrapper clearfix">
-            <h3 class="section-title">Hobbies</h3>  
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p> 
-          </div> -->
-
-      </div>
-    </section>
-
-    <div class="clearfix"></div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-  <script>
-var select = function(s) {
-  return document.querySelector(s);
-};
-
-function randomBetween(min, max) {
-  var number = Math.floor(Math.random() * (max - min + 1) + min);
-
-  if (number !== 0) {
-    return number;
-  } else {
-    return 0.5;
-  }
-}
-
-var tl = new TimelineMax();
-
-for (var i = 0; i < 20; i++) {
-  var t = TweenMax.to(select(".bubble" + i), randomBetween(1, 1.5), {
-    x: randomBetween(12, 15) * randomBetween(-1, 1),
-    y: randomBetween(12, 15) * randomBetween(-1, 1),
-    repeat: -1,
-    repeatDelay: randomBetween(0.2, 0.5),
-    yoyo: true,
-    ease: Elastic.easeOut.config(1, 0.5)
-  });
-
-  tl.add(t, (i + 1) / 0.6);
-}
-
-tl.seek(50);
-
-  </script>
+	<!-- #JQUERY-PLUGINS# -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/validator.min.js"></script>
+	<script src="js/form-scripts.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		/**** EasyPieChart Circle Progress ****/
+		$(function () {
+			//circle progress additional skills
+			$('.chart').easyPieChart({
+				barColor: '#757575',
+				trackColor: 'rgba(255,255,255,0)',
+				scaleColor: 'rgba(255,255,255,0)',
+				lineWidth: '10',
+				lineCap: 'square'
+			});
+		});
+	</script>
 </body>
-
 </html>
